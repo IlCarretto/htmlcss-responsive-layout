@@ -61,7 +61,7 @@ header .container {
     padding: 1.5rem .5rem;
 }
 
-.cards {
+.about-us .cards {
     background-color: var(--lightblue);
     margin-bottom: var(--margin);
     border-radius: 10px;
@@ -70,13 +70,32 @@ header .container {
     border: 1px solid black;
 }
 
-.cards .text-content {
+.about-us .cards .text-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 /* MEDIA QUERY */
+/* Layout for Tablet (768px) */
+@media screen and (min-width: 768px) {
+    /* MAIN */
+    /* About-Us section */
+    .about-us .cards {
+        width: calc(90% / 3);
+    }
+
+    .about-us .cards:first-child {
+        width: calc(98% / 3 * 2);
+    }
+
+    .about-us .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
 /* Layout for Desktop (992px) */
 
 /* COMMON */
@@ -104,5 +123,7 @@ header .container {
     /* /HEADER */
 
     /* MAIN */
-
+    .about-us .cards:first-child {
+        display: flex;
+    }
 }
