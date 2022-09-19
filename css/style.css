@@ -9,9 +9,22 @@ img {
     max-width: 100%;
 }
 
+/* VARIABLES */
+:root {
+    /* background-colors */
+    --blue: #0084fd;
+    --lightblue: #b5ddff;
+    --lavanda: #9792e4;
+    --yellow: #9792e4;
+    --grey: #333333;
+}
+
 /* COMMON */
 html {
     font-family: 'PT Sans', sans-serif;
     font-size: 100%;
 }
+
+/* HEADER */
+/* Mobile-First Layout */
 
