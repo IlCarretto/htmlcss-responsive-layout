@@ -134,6 +134,7 @@ header .container {
 .testimonials .cards {
     background-color: var(--lavanda);
     border-radius: 40px;
+    margin-bottom: var(--margin);
 }
 
 .testimonials .text-content {
@@ -151,14 +152,14 @@ header .container {
     margin-left: 25%;
 }
 
-.testimonials .circle:nth-of-type(2) {
+.testimonials .cards:nth-child(2) .circle{
     background-image: url(../img/testimonial2.jpg);
     background-size: cover;
     background-position: center;
     margin-left: 25%;
 }
 
-.testimonials .circle:nth-of-type(3) {
+.testimonials .circle:nth-child(3) {
     background-image: url(../img/testimonial3.jpg);
     background-size: cover;
     background-position: center;
@@ -210,7 +211,19 @@ header .container {
 }
 
 /* Call-To-Action section */
-.call-to-action
+.call-to-action {
+    background-color: var(--lavanda);
+}
+
+.call-to-action ul {
+    display: flex;
+    justify-content: center;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--grey);
+}
 
 /* MEDIA QUERY */
 /* Layout for Tablet (768px) */
@@ -235,7 +248,6 @@ header .container {
     .testimonials .cards {
         display: flex;
         align-items: center;
-        margin-bottom: var(--margin);
     }
 
     /* Benefits-Section */
@@ -257,7 +269,14 @@ header .container {
     .about-us-second .row {
         display: flex;
     }
-}
+
+    .about-us-second .cards:first-child {
+        width: 60%;
+    }
+
+    .about-us-second .cards:last-child {
+        width: 40%;
+    }
 
 /* Layout for Desktop (992px) */
 
