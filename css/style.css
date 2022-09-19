@@ -30,6 +30,10 @@ html {
     margin: 0 auto;
 }
 
+li {
+    list-style-type: none;
+}
+
 /* HEADER */
 /* Mobile-First Layout (320px) */
 header {
@@ -62,5 +66,15 @@ header .container {
         display: none;
     }
 
+    .menu {
+        display: flex;
+    }
 
+    .menu ul {
+        display: flex;
+    }
+
+    .menu ul li {
+        padding: 0 .5rem;
+    }
 }
