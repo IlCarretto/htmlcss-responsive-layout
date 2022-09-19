@@ -17,6 +17,9 @@ img {
     --lavanda: #9792e4;
     --yellow: #9792e4;
     --grey: #333333;
+
+    /* Spaces */
+    --margin: 1.5rem;
 }
 
 /* COMMON */
@@ -52,6 +55,27 @@ header .container {
     display: none;
 }
 
+/* MAIN */
+.about-us {
+    display: flex;
+    padding: 1.5rem .5rem;
+}
+
+.cards {
+    background-color: var(--lightblue);
+    margin-bottom: var(--margin);
+    border-radius: 10px;
+
+    /* DEBUG */
+    border: 1px solid black;
+}
+
+.cards .text-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 /* MEDIA QUERY */
 /* Layout for Desktop (992px) */
 
@@ -77,4 +101,8 @@ header .container {
     .menu ul li {
         padding: 0 .5rem;
     }
+    /* /HEADER */
+
+    /* MAIN */
+
 }
