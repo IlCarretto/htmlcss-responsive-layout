@@ -20,6 +20,7 @@ img {
 
     /* Spaces */
     --margin: 1.5rem;
+    --padding: 1.5rem .5rem;
 }
 
 /* COMMON */
@@ -29,7 +30,7 @@ html {
 }
 
 .container {
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -58,7 +59,7 @@ header .container {
 /* MAIN */
 .about-us {
     display: flex;
-    padding: 1.5rem .5rem;
+    padding: var(--padding);
 }
 
 .about-us .cards {
@@ -74,6 +75,41 @@ header .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+/* Planning-Section */
+.planning-section {
+    background-color: var(--lavanda);
+    padding: var(--padding);
+}
+
+.planning-section .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.planning-section .cards:first-child h2{
+    color: white;
+    font-size: 1.7rem;
+    padding: 1.5rem 0;
+ }
+
+.planning-section .cards:first-child p{
+    color: white;
+    font-size: .8rem;
+    padding: 1.5rem 0;
+ }
+
+.planning-section .cards:nth-child(2) {
+    background-color: white;
+    border-radius: 50px;
+    text-align: center;
+ }
+
+.planning-section .cards:nth-child(2) .text-content {
+    padding: var(--padding)
 }
 
 /* MEDIA QUERY */
