@@ -25,6 +25,42 @@ html {
     font-size: 100%;
 }
 
-/* HEADER */
-/* Mobile-First Layout */
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
 
+/* HEADER */
+/* Mobile-First Layout (320px) */
+header {
+    background-color: var(--blue);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;
+    color: white;
+}
+
+.menu {
+    display: none;
+}
+
+/* MEDIA QUERY */
+/* Layout for Desktop (992px) */
+
+/* COMMON */
+@media screen and (min-width: 992px) {
+    .container {
+        width: 70%;
+    }
+
+    /* HEADER */
+    .container i {
+        display: none;
+    }
+
+
+}
