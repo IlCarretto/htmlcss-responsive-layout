@@ -159,7 +159,22 @@ header .container {
     /* /HEADER */
 
     /* MAIN */
+    /* About-Us Section */
     .about-us .cards:first-child {
         display: flex;
+    }
+
+    /* Planning-Section */
+    .planning-section .container {
+        width: 50%;
+    }
+    
+    .planning-section .row {
+        margin: 2rem 0;
+        display: flex;
+    }
+
+    .planning-section .cards {
+        width: calc(100% / 2)
     }
 }
