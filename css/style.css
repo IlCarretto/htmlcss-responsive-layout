@@ -278,6 +278,16 @@ footer {
         width: 40%;
     }
 
+    /* Call-To-Action Section */
+    .call-to-action .container {
+        width: 70%;
+    }
+
+    /* Footer */
+    footer .container {
+        width: 70%;
+    }
+
 /* Layout for Desktop (992px) */
 
 /* COMMON */
@@ -327,5 +337,15 @@ footer {
     /* Benefits-Section */
     .benefits .cards {
         width: calc(95% / 3);
+    }
+
+    /* Call-To-Action Section */
+    .call-to-action .container {
+        width: 40%;
+    }
+
+    /* Footer */
+    footer .container {
+        width: 40%;
     }
 }
