@@ -191,42 +191,51 @@ header .container {
 }
 
 .testimonials .center h1{
-    color: var(--lavanda)
+    color: var(--lavanda);
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.testimonials .center p {
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .testimonials .cards {
     background-color: var(--lavanda);
     border-radius: 40px;
     margin-bottom: var(--margin);
+    text-align: center;
+    padding: var(--padding);
 }
 
 .testimonials .text-content {
     color: white;
-    padding: var(--padding);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.testimonials .circle {
+.testimonials .text-content p {
+    margin-bottom: 1rem;
+}
+
+.circle {
+    background-size: cover;
+    background-position: center;
+    margin-left: 25%;
+}
+
+.testimonials .photo-1 {
     background-image: url(../img/testimonial1.jpg);
-    background-size: cover;
-    background-position: center;
-    margin-left: 25%;
 }
 
-.testimonials .cards:nth-child(2) .circle {
+.testimonials .cards:nth-child(2) .photo-2 {
     background-image: url(../img/testimonial2.jpg);
-    background-size: cover;
-    background-position: center;
-    margin-left: 25%;
 }
 
-.testimonials .cards:nth-child(3) .circle {
+.testimonials .cards:nth-child(3) .photo-3 {
     background-image: url(../img/testimonial3.jpg);
-    background-size: cover;
-    background-position: center;
-    margin-left: 25%;
 }
 
 /* Benefits-Section */
@@ -318,9 +327,28 @@ footer {
     }
 
     /* Testimonials-Section */
+    .testimonials .container {
+        width: 80%;
+    }
+
     .testimonials .cards {
         display: flex;
         align-items: center;
+    }
+
+    .testimonials .circle {
+        margin-left: 0;
+    }
+
+    .testimonials .img-content {
+        width: 30%;
+    }
+    
+    .testimonials .text-content {
+        width: 70%;
+        display: flex;
+        justify-content: flex-start;
+        text-align: start;
     }
 
     /* Benefits-Section */
