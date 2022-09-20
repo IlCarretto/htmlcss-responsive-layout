@@ -15,12 +15,12 @@ img {
     --blue: #0084fd;
     --lightblue: #b5ddff;
     --lavanda: #9792e4;
-    --yellow: #9792e4;
+    --yellow: #fdc15f;
     --grey: #333333;
 
     /* Spaces */
     --margin: 1.5rem;
-    --padding: 1.5rem .5rem;
+    --padding: 1.5rem 1rem;
 }
 
 /* COMMON */
@@ -73,6 +73,28 @@ li {
     border: none;
     font-size: 1.2rem;
     margin-top: 1rem;
+}
+
+.more-btn {
+    background-color: var(--lavanda);
+    color: white;
+    padding: .5rem 3rem;
+    letter-spacing: 3px;
+}
+
+.linkedin-btn {
+    background-color: var(--lavanda);
+    color: white;
+    padding: .5rem 2rem;
+}
+
+.get-started-two {
+    font-weight: 600;
+    color: var(--lavanda);
+    letter-spacing: 2px;
+    padding: 1rem 3rem;
+    border-radius: 30px;
+    margin-bottom: 1rem;
 }
 
 /* HEADER */
@@ -220,10 +242,14 @@ header .container {
     margin-bottom: 1rem;
 }
 
+.testimonials .img-content {
+    display: flex;
+    justify-content: center;
+}
+
 .circle {
     background-size: cover;
     background-position: center;
-    margin-left: 25%;
 }
 
 .testimonials .photo-1 {
@@ -246,6 +272,9 @@ header .container {
 
 .benefits h1 {
     color: white;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 .benefits .cards {
@@ -258,8 +287,23 @@ header .container {
     color: var(--lavanda)
 }
 
+.benefits .cards-content span {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.benefits .cards-content h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.benefits .cards-content p {
+    color: #8d8d8d;
+    margin-bottom: 1rem;
+}
+
 .benefits .cards-content {
-    padding: var(--padding)
+    padding: var(--padding);
 }
 
 /* About-Us Second Section */
@@ -270,21 +314,62 @@ header .container {
 .about-us-second h1 {
     color: var(--lavanda);
     font-size: 2.4rem;
+    margin-bottom: 2rem;
 }
 
 .about-us-second .cards p {
-    margin-top: 1rem;
+    line-height: 1.6rem;
+    margin-bottom: 2rem;
 }
 
 .about-us-second .circle {
     background-image: url(../img/about.jpg);
     background-size: cover;
     background-position: center;
+    margin-left: 0;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.about-us-second .circle i {
+    font-size: 4rem;
+    color: var(--lavanda);
+    position: absolute;
+    right: 0;
+}
+
+.about-us-second .text-content p {
+    font-size: 1.6rem;
+    color: var(--lavanda);
+    font-weight: 800;
 }
 
 /* Call-To-Action section */
 .call-to-action {
     background-color: var(--lavanda);
+    padding: var(--padding);
+    color: white;
+}
+
+.call-to-action .center p:first-child {
+    color: #cfcef2;
+    margin-bottom: 1rem;
+}
+
+.call-to-action .center h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.call-to-action .center h1 {
+    font-size: 3rem;
+    color: var(--yellow);
+    margin-bottom: 1rem;
+}
+
+.call-to-action p:last-of-type {
+    font-size: .8rem;
+    margin-bottom: 1rem;
 }
 
 .call-to-action ul {
@@ -292,9 +377,30 @@ header .container {
     justify-content: center;
 }
 
+.call-to-action li {
+    padding: 0 .5rem;
+    font-size: .8rem;
+}
+
+.call-to-action li:last-child {
+    text-decoration: underline;
+}
+
 /* FOOTER */
 footer {
     background-color: var(--grey);
+    color: white;
+    font-size: .8rem;
+    padding: var(--padding);
+}
+
+footer p:first-child {
+    margin-bottom: 2rem;
+}
+
+footer span {
+    color: var(--lavanda);
+    text-decoration: underline;
 }
 
 /* MEDIA QUERY */
@@ -304,6 +410,7 @@ footer {
     /* About-Us section */
     .about-us .cards {
         width: calc(90% / 3);
+        
     }
 
     .about-us .cards:first-child {
@@ -354,6 +461,7 @@ footer {
     /* Benefits-Section */
     .benefits h1 {
         text-align: center;
+        font-size: 2.4rem;
     }
 
     .benefits .row {
@@ -384,9 +492,30 @@ footer {
         width: 70%;
     }
 
+    .call-to-action .center h3 {
+        font-size: 2.6rem;
+    }
+
+    .call-to-action .center h1 {
+        font-size: 4rem;
+    }
+
+    .call-to-action .center p:last-of-type {
+        font-size: 1rem;
+    }
+
+    .get-started-two {
+        padding: 1.5rem 3rem;
+        font-size: 1.2rem;
+    }
+
     /* Footer */
     footer .container {
         width: 70%;
+    }
+
+    footer {
+        font-size: 1rem;
     }
 
 /* Layout for Desktop (992px) */
@@ -468,6 +597,10 @@ footer {
     /* Benefits-Section */
     .benefits .cards {
         width: calc(95% / 3);
+    }
+
+    .benefits h1 {
+        font-size: 3rem;
     }
 
     /* Call-To-Action Section */
