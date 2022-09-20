@@ -48,6 +48,33 @@ li {
     border-radius: 50%;
 }
 
+/* Buttons */
+.btn {
+    border-radius: 20px;
+    border: none;
+}
+
+.get-started {
+    padding: .7rem 1rem .4rem;
+}
+
+.apple-btn {
+    color: white;
+    background-color: var(--blue);
+    padding: .5rem 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.arrow-btn {
+    background-color: var(--lavanda);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
 /* HEADER */
 /* Mobile-First Layout (320px) */
 header {
@@ -76,21 +103,50 @@ header .container {
     background-color: var(--lightblue);
     margin-bottom: var(--margin);
     border-radius: 10px;
-
-    /* DEBUG */
-    border: 1px solid black;
+    padding: 1.5rem 1.5rem 0;
 }
 
-.about-us .cards .text-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.about-us h3 {
+    color: var(--blue);
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-us p {
+    color: #5a6e7f;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.about-us button {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+.about-us .cards:not(:first-child){
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+.about-us .cards:not(:first-child) i {
+    font-size: 5rem;
+    color: var(--blue);
+    margin-bottom: 1.5rem;
+}
+
+.about-us .cards:not(:first-child) h2 {
+    color: var(--blue);
+    margin-bottom: 1.5rem;
+}
+
+.about-us .img-content img {
+    display: block;
 }
 
 /* Planning-Section */
 .planning-section {
     background-color: var(--lavanda);
-    padding: var(--padding);
+    padding: 3rem .5rem;
 }
 
 .planning-section .cards {
@@ -108,7 +164,6 @@ header .container {
 
 .planning-section .cards:first-child p{
     color: white;
-    font-size: .8rem;
     padding: 1.5rem 0;
  }
 
@@ -120,6 +175,14 @@ header .container {
 
 .planning-section .cards:nth-child(2) .text-content {
     padding: var(--padding)
+}
+
+.planning-section .cards:nth-child(2) {
+    padding: 1rem .5rem;
+}
+
+.planning-section .cards:nth-child(2) h3{
+    margin-bottom: 1rem;
 }
 
 /* Testimonials-Section */ 
@@ -152,14 +215,14 @@ header .container {
     margin-left: 25%;
 }
 
-.testimonials .cards:nth-child(2) .circle{
+.testimonials .cards:nth-child(2) .circle {
     background-image: url(../img/testimonial2.jpg);
     background-size: cover;
     background-position: center;
     margin-left: 25%;
 }
 
-.testimonials .circle:nth-child(3) {
+.testimonials .cards:nth-child(3) .circle {
     background-image: url(../img/testimonial3.jpg);
     background-size: cover;
     background-position: center;
@@ -244,6 +307,16 @@ footer {
         justify-content: space-between;
     }
 
+    .about-us .cards:nth-child(1) .img-content {
+        width: 250px;
+        height: 250px;
+    }
+    
+    /* Planning-Section */
+    #strategic {
+        font-size: 3rem;
+    }
+
     /* Testimonials-Section */
     .testimonials .cards {
         display: flex;
@@ -297,7 +370,7 @@ footer {
     }
 
     /* HEADER */
-    .container i {
+    header .container i {
         display: none;
     }
 
@@ -307,17 +380,32 @@ footer {
 
     .menu ul {
         display: flex;
+        align-items: center;
     }
 
     .menu ul li {
         padding: 0 .5rem;
+        font-size: 1.2rem;
     }
+
+    .menu button {
+        font-size: 1rem;
+    }
+
     /* /HEADER */
 
     /* MAIN */
     /* About-Us Section */
     .about-us .cards:first-child {
         display: flex;
+    }
+
+    .about-us .cards:first-child .text-content {
+        width: 50%;
+    }
+
+    .about-us .cards:first-child .img-content {
+        width: 50%;
     }
 
     /* Planning-Section */
@@ -330,8 +418,23 @@ footer {
         display: flex;
     }
 
-    .planning-section .cards {
-        width: calc(100% / 2)
+    .planning-section .cards:first-child {
+        width: 60%;
+    }
+
+    .planning-section .cards:nth-child(2) {
+        width: 40%;
+        height: 30%;
+        display: flex;
+        align-self: flex-end;
+    }
+    
+    .planning-section .cards:first-child .img-content {
+        width: 100%;
+    }
+
+    #strategic {
+        font-size: 2rem;
     }
 
     /* Benefits-Section */
