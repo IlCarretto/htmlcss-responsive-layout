@@ -21,6 +21,7 @@ img {
     /* Spaces */
     --margin: 1.5rem;
     --padding: 1.5rem 1rem;
+    --mb-1: 1rem;
 }
 
 /* COMMON */
@@ -94,7 +95,7 @@ li {
     letter-spacing: 2px;
     padding: 1rem 3rem;
     border-radius: 30px;
-    margin-bottom: 1rem;
+    margin-bottom: var(--mb-1);
 }
 
 /* HEADER */
@@ -204,7 +205,7 @@ header .container {
 }
 
 .planning-section .cards:nth-child(2) h3{
-    margin-bottom: 1rem;
+    margin-bottom: var(--mb-1);
 }
 
 /* Testimonials-Section */ 
@@ -220,7 +221,7 @@ header .container {
 
 .testimonials .center p {
     line-height: 1.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: var(--mb-1);
 }
 
 .testimonials .cards {
@@ -239,7 +240,7 @@ header .container {
 }
 
 .testimonials .text-content p {
-    margin-bottom: 1rem;
+    margin-bottom: var(--mb-1);
 }
 
 .testimonials .img-content {
@@ -250,6 +251,7 @@ header .container {
 .circle {
     background-size: cover;
     background-position: center;
+    margin-bottom: var(--mb-1);
 }
 
 .testimonials .photo-1 {
@@ -294,12 +296,12 @@ header .container {
 
 .benefits .cards-content h3 {
     font-size: 1.6rem;
-    margin-bottom: 1rem;
+    margin-bottom: var(--mb-1);
 }
 
 .benefits .cards-content p {
     color: #8d8d8d;
-    margin-bottom: 1rem;
+    margin-bottom: var(--mb-1);
 }
 
 .benefits .cards-content {
@@ -353,23 +355,23 @@ header .container {
 
 .call-to-action .center p:first-child {
     color: #cfcef2;
-    margin-bottom: 1rem;
+    margin-bottom: var(--mb-1);
 }
 
 .call-to-action .center h3 {
     font-size: 1.6rem;
-    margin-bottom: 1rem;
+    margin-bottom: var(--mb-1);
 }
 
 .call-to-action .center h1 {
     font-size: 3rem;
     color: var(--yellow);
-    margin-bottom: 1rem;
+    margin-bottom: var(--mb-1);
 }
 
 .call-to-action p:last-of-type {
     font-size: .8rem;
-    margin-bottom: 1rem;
+    margin-bottom: var(--mb-1);
 }
 
 .call-to-action ul {
@@ -424,8 +426,7 @@ footer span {
     }
 
     .about-us .cards:nth-child(1) .img-content {
-        width: 250px;
-        height: 250px;
+        width: 70%;
     }
     
     /* Planning-Section */
@@ -557,12 +558,16 @@ footer span {
         display: flex;
     }
 
-    .about-us .cards:first-child .text-content {
+    .about-us .cards:first-child > * {
         width: 50%;
     }
 
     .about-us .cards:first-child .img-content {
-        width: 50%;
+        align-self: flex-end;
+    }
+
+    .about-us .cards:first-child img {
+        vertical-align: bottom;
     }
 
     /* Planning-Section */
